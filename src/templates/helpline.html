@@ -1,0 +1,133 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Epidemic Prediction</title>
+
+  <!-- Bootstrap -->
+  <link href="{%static 'css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{%static 'css/bootstrap.min.css'%}" rel="stylesheet">
+  <link rel="stylesheet" href="{%static 'css/font-awesome.min.css'%}">
+  <link href="{%static 'css/animate.min.css'%}" rel="stylesheet">
+  <link href="{%static 'css/animate.css'%}" rel="stylesheet" />
+  <link href="{%static 'css/prettyPhoto.css'%}" rel="stylesheet">
+  <link href="{%static 'css/style.css'%}" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: OnePage
+    Theme URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="site-logo">
+          <a href="index.html" class="brand">Epidemic Prediction</a>
+        </div>
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="{% url 'home'%}">Home</a></li>
+            <li><a href="{% url 'about'%}">About Us</a></li>
+            <li><a href="{% url 'helpline'%}">View Helpines</a></li>
+            <li><a href="{% url 'contact'%}">Contact</a></li>
+            <li><a href="{% url 'home'%}">Map View</a></li>
+          </ul>
+        </div>
+        <!-- /.Navbar-collapse -->
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Search form -->
+  !-- Search form -->
+  <div id="search"class="container">
+      <br/>
+  	<div class="row justify-content-center">
+                          <div class="col-12 col-md-10 col-lg-8">
+                              <form action="{% url 'search_results' %}" method="get" class="card card-sm">
+                                  <div class="card-body row no-gutters align-items-center">
+                                      <div class="col-auto">
+                                          <i class="fas fa-search h4 text-body"></i>
+                                      </div>
+                                      <!--end of col-->
+                                      <div class="col">
+                                          <input id="ip" name="q" class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search Cities">
+                                      </div>
+                                      <br>
+                                      <!--end of col-->
+                                      <div class="col-auto">
+                                          <button class="btn btn-lg btn-success" type="submit">Search</button>
+                                      </div>
+                                      <!--end of col-->
+                                  </div>
+                              </form>
+                          </div>
+                          <!--end of col-->
+                      </div>
+  </div>
+
+
+
+
+
+<!--
+    <footer id="footer" class="midnight-blue">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <div class="text-center">
+              <a href="#home" class="scrollup"><i class="fa fa-angle-up fa-3x"></i></a>
+            </div>
+            &copy; EPIDEMIC PREDICTION.
+             All Rights Reserved.
+
+          </div>
+
+            <div class="col-lg-12">
+              <div class="social">
+                <ul class="social-share">
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                  <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </div>
+    </footer>
+    <!--/#footer--> -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{% static 'js/jquery.js'%}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{% static 'js/bootstrap.min.js'%}"></script>
+    <script src="{% static 'js/jquery.prettyPhoto.js'%}"></script>
+    <script src="{% static 'js/jquery.isotope.min.js' %}"></script>
+    <script src="{% static 'js/wow.min.js'%}"></script>
+    <script src="{% static 'js/jquery.easing.min.js'%}"></script>
+    <script src="{% static 'js/main.js'%}"></script>
+    <script src="{% static 'contactform/contactform.js'%}"></script>
+
+  </body>
+
+  </html>
